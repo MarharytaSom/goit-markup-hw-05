@@ -566,29 +566,33 @@
             </li>
           </ul>
         </div>
-        <div class="subscribe">
-          <p class="soc-med-title">Subscribe</p>
-          <form class="review-form-footer">
-            <input
-              type="email"
-              class="review-form-input-footer"
-              name="user-email"
-              id="user-email-footer"
-              placeholder="E-mail"
-              required
-            />
-          </form>
-        </div>
-        <button class="subscribe-btn" type="submit">
-          Subscribe
-          <svg class="subscribe-icon" width="24" height="20">
-            <use href="./images/icons.svg#icon-plane"></use>
-          </svg>
-        </button>
+
+        <form class="review-form-footer">
+          <div class="subscribe">
+            <label for="" class="label-footer">
+              Subscribe
+              <input
+                type="email"
+                class="review-form-input-footer"
+                name="user-email"
+                id="user-email-footer"
+                placeholder="E-mail"
+                required
+              />
+            </label>
+          </div>
+
+          <button class="subscribe-btn" type="submit">
+            Subscribe
+            <svg class="subscribe-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-plane"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
 
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button class="modal-close-btn" type="button">
           <svg class="modal-close-icon" width="8" height="8">
@@ -669,7 +673,7 @@
             <input
               type="checkbox"
               class="review-form-privacy-checkbox visually-hidden"
-              name="privacy-policy"
+              name="user-privacy"
               id="user-privacy"
               value="true"
               required
